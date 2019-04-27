@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
-class Dashboard extends Component {
+class Today extends Component {
   constructor(props) {
     super(props);
   }
@@ -26,4 +25,4 @@ const mdp = (dispatch) => {
   }
 }
 
-export default connect(msp, mdp)(Dashboard);
+export default connect(msp, mdp)(Today);
