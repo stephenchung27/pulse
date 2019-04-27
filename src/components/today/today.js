@@ -9,7 +9,7 @@ class Today extends Component {
   render() {
     return (
      <h1>
-       dashbard
+       today
      </h1>
     )
   }
