@@ -9,7 +9,7 @@ class Report extends Component {
   render() {
     return (
      <h1>
-       Report
+       Weekly Report
      </h1>
     )
   }
