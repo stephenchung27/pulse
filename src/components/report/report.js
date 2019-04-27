@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { fetchReport } from '../../actions/report_actions';
 import Chart from './chart';
+import './report.css'
 
 class Report extends Component {
   constructor(props) {
@@ -20,26 +21,28 @@ class Report extends Component {
   }
 
   render() {
-    if (!this.props.report.steps) return null;
+    if (!Object.values(this.props.report).length) return null;
 
     return (
     <>
-      <h1>
+      <h1 className="data-title">
         {this.state.type}
       </h1>
 
       < Chart data={this.props.report[this.state.type]} />
-      <div onClick={this.handleChange("bloodPressure")}>
-          BloodPressure
-      </div>
-      <div onClick={this.handleChange("heartRate")}>
-          HeartRate
-      </div>
-      <div onClick={this.handleChange("steps")}>
-          Steps
-      </div>
-      <div onClick={this.handleChange("glucose")}>
-          Glucose
+      <div className="buttons">
+        <div onClick={this.handleChange("bloodPressure")} className="data-type">
+            BloodPressure
+        </div>
+        <div onClick={this.handleChange("heartRate")} className="data-type">
+            HeartRate
+        </div>
+        <div onClick={this.handleChange("steps")} className="data-type">
+            Steps
+        </div>
+        <div onClick={this.handleChange("glucose")} className="data-type">
+            Glucose
+        </div>
       </div>
     </>
     )
