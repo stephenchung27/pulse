@@ -1,0 +1,21 @@
+[
+  {
+    "time": "12:00 PM",
+    "pills": {
+      "Advil": {
+        "drug": "Ibuprofen",
+        "dose": "200 mg",
+        "picture_path": "/images/pills/advil.png",
+        "type": "Nonsteroidal anti-inflammatory drug",
+        "description": "It can treat fever and mild to severe pain."
+      },
+      "Metformin": {
+        "drug": "",
+        "dose": "750 mg",
+        "picture_path": "",
+        "type": "Anti-diabetic medication",
+        "description": "Metformin is a drug approved by the U.S. Food and Drug Administration as a prescription medication to treat diabetes. This medication is used to decrease hepatic (liver) glucose production, to decrease GI glucose absorption and to increase target cell insulin sensitivity. This medication is a treatment indicated as an adjunct to diet, exercise, and lifestyle changes such as weight loss to improve glycemic (blood sugar) control in adults with type 2 diabetes. Many patients with type 2 diabetes will eventually need to take insulin by injection. Metformin does not cause weight gain."
+      }
+    }
+  }
+]

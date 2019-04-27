@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 class Splash extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
   
 
