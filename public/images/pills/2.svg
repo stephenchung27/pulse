@@ -1,0 +1,35 @@
+<svg width="46px" height="46px" viewBox="0 0 46 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <filter x="-31.6%" y="-31.6%" width="163.2%" height="163.2%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.25 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <radialGradient cx="50%" cy="-15.3204368%" fx="50%" fy="-15.3204368%" r="144.080591%" id="radialGradient-2">
+            <stop stop-color="#E5E5E5" offset="0%"></stop>
+            <stop stop-color="#999999" offset="100%"></stop>
+        </radialGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="109.380804%" id="linearGradient-3">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#CDCDCD" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#C8C8C8" offset="0%"></stop>
+            <stop stop-color="#979797" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-XS-Copy-2" transform="translate(-274.000000, -317.000000)">
+            <g id="Group-Copy" filter="url(#filter-1)" transform="translate(297.000000, 338.000000) rotate(30.000000) translate(-297.000000, -338.000000) translate(278.000000, 319.000000)">
+                <circle id="Oval" fill="url(#radialGradient-2)" cx="19" cy="19" r="19"></circle>
+                <circle id="Oval" fill="url(#linearGradient-3)" cx="19" cy="19" r="16.625"></circle>
+                <path d="M19.1979167,2.375 L19.1979167,35.625" id="Path-3" stroke="url(#linearGradient-4)" stroke-width="3.2"></path>
+                <path d="M17.8125,2.375 L17.8125,35.625" id="Path-3" stroke="#FFFFFF" stroke-width="1.6"></path>
+            </g>
+        </g>
+    </g>
+</svg>

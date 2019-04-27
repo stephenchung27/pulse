@@ -1,0 +1,23 @@
+<svg width="85px" height="35px" viewBox="0 0 85 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <rect id="path-1" x="0" y="0" width="77" height="27" rx="13.5"></rect>
+        <filter x="-9.1%" y="-18.5%" width="118.2%" height="151.9%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.25 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-XS-Copy-2" transform="translate(-257.000000, -259.000000)">
+            <g id="Group-Copy-3" transform="translate(261.000000, 261.000000)">
+                <g id="Rectangle">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <path d="M39,3.55271368e-15 L39,27 L13.5,27 C6.04415588,27 9.13077564e-16,20.9558441 0,13.5 C-9.13077564e-16,6.04415588 6.04415588,1.36961635e-15 13.5,0 L39,0 Z" id="Combined-Shape" fill="#D64E4E"></path>
+                <path d="M38,5 L38,9 L13,9 C11.8954305,9 11,8.1045695 11,7 C11,5.8954305 11.8954305,5 13,5 L38,5 Z" id="Combined-Shape" fill="#FFFFFF" opacity="0.635091146"></path>
+                <path d="M66,5 L66,9 L41,9 C39.8954305,9 39,8.1045695 39,7 C39,5.8954305 39.8954305,5 41,5 L66,5 Z" id="Combined-Shape" fill="#FFFFFF" opacity="0.718936012" transform="translate(52.500000, 7.000000) scale(-1, 1) translate(-52.500000, -7.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

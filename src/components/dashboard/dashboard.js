@@ -21,22 +21,36 @@ class Dashboard extends Component {
           <h1 className='time'>9:00 PM</h1>
           <section className='pill-view'>
             <div className='pill-view-item'>
-              <img src='/images/pills/HTP5.svg' />
-              <h1>HTP-5</h1>
-              <h3>150 mg</h3>
+              <img src='/images/pills/1.svg' />
+              <div className='pill-details'>
+                <h1>HTP-5</h1>
+                <h3>150 mg</h3>
+              </div>
             </div>
             <div className='pill-view-item'>
-              <img src='/images/pills/HTP5.svg' />
-              <h1>HTP-5</h1>
-              <h3>150 mg</h3>
+              <img src='/images/pills/2.svg' />
+              <div className='pill-details'>
+                <h1>HTP-5</h1>
+                <h3>150 mg</h3>
+              </div>
             </div>
             <div className='pill-view-item'>
-              <img src='/images/pills/HTP5.svg' />
-              <h1>HTP-5</h1>
-              <h3>150 mg</h3>
+              <img src='/images/pills/3.svg' />
+              <div className='pill-details'>
+                <h1>HTP-5</h1>
+                <h3>150 mg</h3>
+              </div>
+            </div>
+            <div className='pill-view-item'>
+              <img src='/images/pills/4.svg' />
+              <div className='pill-details'>
+                <h1>HTP-5</h1>
+                <h3>150 mg</h3>
+              </div>
             </div>
           </section>
         </section>
+        <h1 className='divider'>Your daily report</h1>
       </div>
     )
   }
