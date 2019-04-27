@@ -1,10 +1,10 @@
 import React from 'react';
 import { Route, Switch } from "react-router-dom";
 import './App.css';
-import Splash from './splash';
-import Dashboard from './dashboard';
-import Today from './today';
-import Report from './report';
+import Splash from './splash/splash';
+import Dashboard from './dashboard/dashboard';
+import Today from './today/today';
+import Report from './daily_report/daily_report';
 
 function App() {
   return (
