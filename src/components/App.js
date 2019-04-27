@@ -4,7 +4,7 @@ import './App.css';
 import Splash from './splash/splash';
 import Dashboard from './dashboard/dashboard';
 import Today from './today/today';
-import Report from './daily_report/daily_report';
+import Report from './report/report';
 
 function App() {
   return (
