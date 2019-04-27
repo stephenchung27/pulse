@@ -1,30 +1,34 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
+import './splash.scss';
 
-class Splash extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
+class Splash extends Component {
   render() {
-  
-
     return (
-     <h1>
-       splashy
-     </h1>
+      <div className='login'>
+        <header>
+          <img src='/favicon.png' alt='Pulse logo' />
+          <h1>
+            Pulse
+          </h1>
+        </header>
+        <form>
+          <input type='text' placeholder='Name' />
+          <input type='password' placeholder='Password' />
+          <Link to='/dashboard'>
+            <button className='login-btn'>
+              Login
+            </button>
+          </Link>
+          <a href='/' className='forgot-password'>Forgot password?</a>
+          <button className='signup-btn'>
+            <h1>Sign Up</h1>
+            <i className='material-icons'>keyboard_arrow_right</i>
+          </button>
+        </form>
+      </div>
     )
   }
 }
 
-const msp = (state) => {
-  return {
-  }
-}
-
-const mdp = (dispatch) => {
-  return {
-  }
-}
-
-export default connect(msp, mdp)(Splash);
+export default Splash;

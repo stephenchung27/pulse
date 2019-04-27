@@ -1,6 +1,5 @@
 import React from 'react';
 import { Route, Switch } from "react-router-dom";
-import './App.css';
 import Splash from './splash/splash';
 import Dashboard from './dashboard/dashboard';
 import Today from './today/today';

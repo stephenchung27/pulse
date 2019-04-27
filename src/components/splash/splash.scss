@@ -1,0 +1,126 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 20px 0;
+  box-sizing: border-box;
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex-grow: 1;
+
+    img {
+      width: 100px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      margin: 10px 0;
+      text-align: center;
+      color: #34006E;
+    }
+  }
+
+  form {
+    width: 315px;
+
+    input {
+      box-sizing: border-box;
+      padding: 0 10px;
+      height: 54px;
+      width: 100%;
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 22px;
+      background-color: rgb(244, 246, 246);
+      border: 2px solid transparent;
+      border-radius: 7px;
+      margin-bottom: 15px;
+      transition: border 0.25s ease;
+      font-family: "TT Norms", sans-serif;
+      color: #777777;
+
+      &::placeholder {
+        color: #C4C4C4;
+      }
+
+      &:hover {
+        border: 2px solid #CCC;
+      }
+
+      &:focus {
+        border: 2px solid rgb(65, 150, 181);
+      }
+    }
+
+    .login-btn {
+      display: inline-block;
+      border: none;
+      height: 54px;
+      width: 100%;
+      margin: 26px 0;
+      border-radius: 7px;
+      background-color: rgb(65, 150, 181);
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+      font-family: "TT Norms", sans-serif;
+      transition: background-color 0.25s ease;
+
+      &:hover {
+        background-color: #347890;
+      }
+    }
+
+    .forgot-password {
+      align-items: flex-start;
+      color: rgb(65, 150, 181);
+      text-decoration: none;
+      font-family: "TT Norms";
+      transition: color 0.25s ease;
+
+      &:hover {
+        color: #347890;
+      }
+    }
+
+    .signup-btn {
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 48px;
+      width: 315px;
+      background-color: rgb(244, 246, 246);
+      border: 2px solid rgb(244, 246, 246);
+      border-radius: 7px;
+      padding: 0 15px;
+      margin-top: 125px;
+      color: #777777;
+      cursor: pointer;
+      font-family: "TT Norms",
+        sans-serif;
+      transition: border 0.25s ease;
+
+      h1 {
+        font-size: 18px;
+      }
+
+      i {
+        color: #AAAAAA;
+      }
+
+      &:hover {
+        border: 2px solid #CCC;
+      }
+    }
+  }
+
+
+}
