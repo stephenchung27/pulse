@@ -29,7 +29,7 @@ class Report extends Component {
         {this.state.type}
       </h1>
 
-      < Chart data={this.props.report[this.state.type]} />
+      < Chart data={this.props.report[this.state.type]} type={this.state.type} />
       <div className="buttons">
         <div onClick={this.handleChange("bloodPressure")} className="data-type">
             BloodPressure

@@ -1,26 +1,37 @@
 import React, { Component } from 'react';
-import { LineChart, Line, YAxis, Legend, Tooltip, XAxis, CartesianGrid } from 'recharts';
+import { LineChart, Line, YAxis, Tooltip, XAxis } from 'recharts';
 
 class Chart extends Component {
   render() {
-    const data = [];
-    debugger
-    this.props.data.forEach( (day, i) => {
-      if (i % 5 === 0) {
-        data.push({name: i, value: day});
-      } else {
-        data.push({ name: "", value: day})
-      }
-    });
-
     const width = window.innerWidth*0.9;
+    
+    let line1;
+    let line2 = null;
+    let smallest;
+    let biggest;
+    if (this.props.type === "bloodPressure") {
+      line1 = <Line type="monotone" dataKey="systolic" stroke="#8884d8" dot={false} strokeWidth={3} />
+      line2 = <Line type="monotone" dataKey="diastolic" stroke="#756234" dot={false} strokeWidth={3} />
+      smallest = 70;
+      biggest = 150;
+    } 
+    else if (this.props.type === 'heartRate') {
+      line1 = <Line type="monotone" dataKey="BPM" stroke="#8884d8" dot={false} strokeWidth={3} />
+    } 
+    else if (this.props.type === 'steps') {
+      line1 = <Line type="monotone" dataKey="steps" stroke="#8884d8" dot={false} strokeWidth={3} />
+    }
+    else if (this.props.type === 'glucose') {
+      line1 = <Line type="monotone" dataKey="glucose" stroke="#8884d8" dot={false} strokeWidth={3} />
+    }
     return (
      <>
-       <LineChart width={width} height={150} data={data} >
-        <XAxis dataKey="name" />
-        <YAxis />
-        <Tooltip contentStyle={{ backgroundColor: 'blue', border: '0', borderRadius: "5px" }}/>
-        <Line type="monotone" dataKey="value" stroke="#8884d8" dot={false} strokeWidth={3} />
+       <LineChart width={width} height={100} data={this.props.data} >
+        <XAxis/>
+        <YAxis domain={[smallest, biggest]} />/>
+        <Tooltip contentStyle={{ backgroundColor: 'purple', border: '0', borderRadius: "5px" }}/>
+        {line1}
+        {line2}
       </LineChart>
      </>
     )
