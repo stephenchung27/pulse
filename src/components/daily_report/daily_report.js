@@ -9,7 +9,7 @@ class Report extends Component {
   render() {
     return (
      <h1>
-       Weekly report
+       Weekly Report
      </h1>
     )
   }
@@ -17,7 +17,6 @@ class Report extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    data: state.entities.data,
   }
 }
 
