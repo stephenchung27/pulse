@@ -55,6 +55,28 @@ class Dashboard extends Component {
           <div className='notification-item'>
             <img src='/images/arrow_down.svg' />
             <p>Your new prescription bmp 35 mg decrease blood pressure by 10%.</p>
+          </div> 
+        </section>
+        <section className='realtime'>
+          <h3>Realtime</h3>
+          <h1>70<span>bpm</span></h1>
+        </section>
+        <h1 className='divider'>Key metrics</h1>
+        <section className='key-metrics'>
+          <div className='stat-item'>
+            <h1 className='title'>Steps</h1>
+            <h1 className='number'>4,265</h1>
+            <h1 className='unit'>steps</h1>
+          </div>
+          <div className='stat-item'>
+            <h1 className='title'>Heart Rate</h1>
+            <h1 className='number'>100</h1>
+            <h1 className='unit'>bpm</h1>
+          </div>
+          <div className='stat-item'>
+            <h1 className='title'>Blood Pressure</h1>
+            <h1 className='number'>110</h1>
+            <h1 className='unit'>mmHg</h1>
           </div>
         </section>
       </div>
