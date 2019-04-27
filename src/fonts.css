@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "TT Norms";
+  src: url("/	fonts/regular.otf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "TT Norms";
+  src: url("/fonts/bold.otf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "TT Norms";
+  src: url("/fonts/medium.otf");
+  font-weight: 500;
+}

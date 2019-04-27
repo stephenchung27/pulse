@@ -2,13 +2,9 @@ import React, { Component } from 'react';
 import { LineChart, Line, YAxis, Legend, Tooltip, XAxis, CartesianGrid } from 'recharts';
 
 class Chart extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     const data = [];
-
+    debugger
     this.props.data.forEach( (day, i) => {
       if (i % 5 === 0) {
         data.push({name: i, value: day});

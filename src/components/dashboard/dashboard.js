@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 class Dashboard extends Component {
@@ -11,9 +10,9 @@ class Dashboard extends Component {
     };
 
     return (
-      <div>
+      <div className='dashboard'>
         <header>
-          <h1>Hey {name},</h1>
+          <h1>Hello {name},</h1>
         </header>
         <section>
           <div className='dashboard-item pills'>

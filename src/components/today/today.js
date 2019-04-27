@@ -13,45 +13,45 @@ class Today extends Component {
           <div className='pills-container'>
             <div className='pill-item'>
               <h1>Advil</h1>
-              <img src='/images/pills/advil.png' />
+              <img src='/images/pills/advil.png' alt='Advil'/>
             </div>
             <div className='pill'>
               <h1>Advil</h1>
-              <img src='/images/pills/advil.png' />
+              <img src='/images/pills/advil.png' alt='Advil'/>
             </div>
             <div className='pill'>
               <h1>Advil</h1>
-              <img src='/images/pills/advil.png' />
+              <img src='/images/pills/advil.png' alt='Advil'/>
             </div>
           </div>
           <h1 className='time'>12:00 PM</h1>
           <div className='pills-container'>
             <div className='pill-item'>
               <h1>Advil</h1>
-              <img src='/images/pills/advil.png' />
+              <img src='/images/pills/advil.png' alt='Advil'/>
             </div>
             <div className='pill'>
               <h1>Advil</h1>
-              <img src='/images/pills/advil.png' />
+              <img src='/images/pills/advil.png' alt='Advil'/>
             </div>
             <div className='pill'>
               <h1>Advil</h1>
-              <img src='/images/pills/advil.png' />
+              <img src='/images/pills/advil.png' alt='Advil'/>
             </div>
           </div>
           <h1 className='time'>12:00 PM</h1>
           <div className='pills-container'>
             <div className='pill-item'>
               <h1>Advil</h1>
-              <img src='/images/pills/advil.png' />
+              <img src='/images/pills/advil.png' alt='Advil'/>
             </div>
             <div className='pill'>
               <h1>Advil</h1>
-              <img src='/images/pills/advil.png' />
+              <img src='/images/pills/advil.png' alt='Advil'/>
             </div>
             <div className='pill'>
               <h1>Advil</h1>
-              <img src='/images/pills/advil.png' />
+              <img src='/images/pills/advil.png' alt='Advil'/>
             </div>
           </div>  
         </section>
