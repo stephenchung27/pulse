@@ -67,4 +67,24 @@
     font-size: 28px;
     color: rgb(69, 81, 84);
   }
+
+  .notifications {
+    width: 100%;
+    background-color: rgb(244, 246, 246);
+    padding: 25px 20px;
+    box-sizing: border-box;
+
+    .notification-item {
+      display: flex;
+      flex-direction: row;
+      p {
+        margin-left: 30px;
+        flex-shrink: 1;
+        font-size: 22px;
+        font-weight: 700;
+        color: rgb(69, 81, 84);
+      }
+    }
+
+  }
 }

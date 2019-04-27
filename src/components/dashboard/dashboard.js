@@ -51,6 +51,12 @@ class Dashboard extends Component {
           </section>
         </section>
         <h1 className='divider'>Your daily report</h1>
+        <section className='notifications'>
+          <div className='notification-item'>
+            <img src='/images/arrow_down.svg' />
+            <p>Your new prescription bmp 35 mg decrease blood pressure by 10%.</p>
+          </div>
+        </section>
       </div>
     )
   }
