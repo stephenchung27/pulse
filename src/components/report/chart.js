@@ -17,12 +17,18 @@ class Chart extends Component {
     } 
     else if (this.props.type === 'heartRate') {
       line1 = <Line type="monotone" dataKey="BPM" stroke="#8884d8" dot={false} strokeWidth={3} />
+      smallest = 55;
+      biggest = 95
     } 
     else if (this.props.type === 'steps') {
       line1 = <Line type="monotone" dataKey="steps" stroke="#8884d8" dot={false} strokeWidth={3} />
+      smallest = 450;
+      biggest = 1500;
     }
     else if (this.props.type === 'glucose') {
       line1 = <Line type="monotone" dataKey="glucose" stroke="#8884d8" dot={false} strokeWidth={3} />
+      smallest = 95;
+      biggest = 130;
     }
     return (
      <>

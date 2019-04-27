@@ -28,6 +28,9 @@ class Report extends Component {
       <h1 className="data-title">
         {this.state.type}
       </h1>
+      <h2>
+        weekly report
+      </h2>
 
       < Chart data={this.props.report[this.state.type]} type={this.state.type} />
       <div className="buttons">
