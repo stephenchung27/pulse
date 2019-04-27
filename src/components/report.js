@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-class Dashboard extends Component {
+class Report extends Component {
   constructor(props) {
     super(props);
   }
@@ -9,20 +9,20 @@ class Dashboard extends Component {
   render() {
     return (
      <h1>
-       dashbard
+       Report
      </h1>
     )
   }
 }
 
-const msp = (state) => {
+const mapStateToProps = (state) => {
   return {
   }
 }
 
-const mdp = (dispatch) => {
+const mapDisptachToProps = (dispatch) => {
   return {
   }
 }
 
-export default connect(msp, mdp)(Dashboard);
+export default connect(mapStateToProps, mapDisptachToProps)(Report);
