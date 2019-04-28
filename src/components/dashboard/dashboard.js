@@ -113,7 +113,7 @@ class Dashboard extends Component {
         <section className='notifications'>
           <div className='notification-item'>
             <img src='/images/arrow_down.svg' alt='drug' />
-            <p>Your new prescription Alfuzosin decreases heart rate by 25%.</p>
+            <p>Your new prescription Alfuzosin decreases heart rate by 12%.</p>
           </div>
           <section className='key-metrics'>
             <div className='stat-item'
