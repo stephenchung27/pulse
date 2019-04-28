@@ -1,0 +1,18 @@
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+  color: #C4C4C4;
+
+  p {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-align: center;
+  }
+
+  i {
+    margin-left: 5px;
+  }
+}

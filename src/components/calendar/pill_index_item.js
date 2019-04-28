@@ -15,13 +15,18 @@ class PillIndexItem extends Component {
 
   render() {
     return (
-      <div className='period-item'
-      onClick={this.handleClick}>
-        <div>
-          <h1>{this.props.pills[this.props.pill].drug}</h1>
-          <h3>{this.props.pills[this.props.pill].dose}</h3>
+      <div className='period-item-container'
+        onClick={this.handleClick}>
+        <div className='period-item'>
+          <div>
+            <h1>{this.props.pills[this.props.pill].drug}</h1>
+            <h3>{this.props.pills[this.props.pill].dose}</h3>
+          </div>
+          <img src={this.props.pills[this.props.pill].picture_path} alt='drug' />
         </div>
-        <img src={this.props.pills[this.props.pill].picture_path} alt='drug' />
+        {this.props.pills[this.props.pill].warning && 
+          <div className='warning'>{this.props.pills[this.props.pill].warning}</div>
+        }
       </div>
     )
   }

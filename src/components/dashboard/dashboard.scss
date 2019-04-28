@@ -86,12 +86,13 @@
         justify-content: space-between;
         align-content: center;
         text-align: center;
-        width: 135px;
+        // width: 135px;
 
         h1 {
           font-size: 24px;
           font-weight: 700;
           margin: 15px 0 5px;
+          padding: 0 15px;
         }
 
         h3 {
@@ -103,7 +104,7 @@
   }
 
   .divider {
-    margin: 40px 0;
+    margin: 20px 0;
     padding: 0 30px;
     font-weight: 700;
     font-size: 28px;
@@ -246,23 +247,6 @@
       &:nth-child(2n + 1) {
         background-color: rgba(244, 246, 246, 0.3);
       }
-    }
-  }
-
-  footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 40px 0;
-    color: #C4C4C4;
-    p {
-      font-size: 16px;
-      font-weight: 700;
-      letter-spacing: 5px;
-      text-align: center;
-    }
-    i {
-      margin-left: 5px;
     }
   }
 }

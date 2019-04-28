@@ -18,7 +18,8 @@
     "dose": "250 mg",
     "picture_path": "/images/pills/3.svg",
     "type": "Nonsteroidal anti-inflammatory drug",
-    "description": "Silodosin can treat problems caused by an enlarged prostate (benign prostatic hyperplasia or BPH)."
+    "description": "Silodosin can treat problems caused by an enlarged prostate (benign prostatic hyperplasia or BPH).",
+    "warning": "No alcohol within 4 hours after taking."
   },
   "Tamsulosin": {
     "drug": "Tamsulosin",
@@ -32,6 +33,7 @@
     "dose": "250 mg",
     "picture_path": "/images/pills/2.svg",
     "type": "Anti-diabetic medication",
-    "description": "Terazosin can treat high blood pressure and enlarged prostate (benign prostatic hyperplasia)."
+    "description": "Terazosin can treat high blood pressure and enlarged prostate (benign prostatic hyperplasia).",
+    "warning": "Do not take on an empty stomach."
   }
 }

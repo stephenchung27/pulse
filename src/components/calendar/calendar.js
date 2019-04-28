@@ -76,7 +76,7 @@ class Calendar extends Component {
         </div>
         <section className='period'>
           <header className='blue'>
-            <h1>9:00 AM</h1>
+            <h1>8:00 AM</h1>
           </header>
           <main>
             {pills}
@@ -84,7 +84,7 @@ class Calendar extends Component {
         </section>
         <section className='period'>
           <header className='purple'>
-            <h1>9:00 AM</h1>
+            <h1>3:00 PM</h1>
           </header>
           <main>
             {pills}
@@ -92,7 +92,7 @@ class Calendar extends Component {
         </section>
         <section className='period'>
           <header className='red'>
-            <h1>9:00 AM</h1>
+            <h1>9:00 PM</h1>
           </header>
           <main>
             {pills}

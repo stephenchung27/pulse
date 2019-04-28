@@ -13,8 +13,11 @@ class Report extends Component {
     this.handleChange = this.handleChange.bind(this);
   }
 
-  componentDidMount() {
-    this.props.fetchReport();
+  async componentDidMount() {
+    await this.props.fetchReport();
+    setTimeout(() => {
+      document.getElementById('report').classList.add('visible');
+    });
   }
 
   handleChange(type) {
@@ -26,7 +29,7 @@ class Report extends Component {
     let heartRateClass = this.state.type === 'heartRate' ? 'active-fixed' : '';
 
     return (
-      <section className="report">
+      <section id="report">
         <div className={`heart-rate ${heartRateClass}`}>
           Since you started taking advil your heart rate has 
           dropped 25%
@@ -34,7 +37,8 @@ class Report extends Component {
         <header>
           <i className='material-icons'
           onClick={() => {
-            this.props.history.goBack();
+            document.getElementById('report').classList.remove('visible');
+            setTimeout(() => this.props.history.goBack(), 500);
           }}>
           keyboard_arrow_left
           </i>

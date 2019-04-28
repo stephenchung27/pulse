@@ -11,26 +11,29 @@ class Dashboard extends Component {
     this.state = {
       bpm: 70
     }
-  }
-
-  componentDidMount() {
-    setTimeout(() => {
-      document.getElementById('dashboard').classList.add('visible');
-    }, 0);
-
     this.interval = setInterval(() => {
       this.setState({ bpm: (this.state.bpm + Math.floor(Math.random() * 3) - 1) })
     }, 1750);
   }
 
+  componentDidMount() {
+    setTimeout(() => {
+      document.getElementById('dashboard').classList.add('visible');
+    });
+  }
+
   componentWillUnmount() {
+    document.getElementById('dashboard').classList.remove('visible');
     clearInterval(this.interval);
   }
 
   handleClick(report) {
     return () => {
-      this.props.receiveCurrentReport(report);
-      this.props.history.push("/report");
+      document.getElementById('dashboard').classList.remove('visible');
+      setTimeout(() => {
+        this.props.receiveCurrentReport(report);
+        this.props.history.push("/report");
+      }, 500);
     }
   }
 
@@ -54,55 +57,37 @@ class Dashboard extends Component {
             <div className='pill-view-item'>
               <img src='/images/pills/1.svg' alt='drug' />
               <div className='pill-details'>
-                <h1>HTP-5</h1>
+                <h1>Alfuzosin</h1>
                 <h3>150 mg</h3>
               </div>
             </div>
             <div className='pill-view-item'>
               <img src='/images/pills/2.svg' alt='drug' />
               <div className='pill-details'>
-                <h1>HTP-5</h1>
-                <h3>150 mg</h3>
+                <h1>Doxazosin</h1>
+                <h3>200 mg</h3>
               </div>
             </div>
             <div className='pill-view-item'>
               <img src='/images/pills/3.svg' alt='drug' />
               <div className='pill-details'>
-                <h1>HTP-5</h1>
-                <h3>150 mg</h3>
+                <h1>Silodosin</h1>
+                <h3>250 mg</h3>
               </div>
             </div>
             <div className='pill-view-item'>
               <img src='/images/pills/4.svg' alt='drug' />
               <div className='pill-details'>
-                <h1>HTP-5</h1>
+                <h1>Tamsulosin</h1>
                 <h3>150 mg</h3>
               </div>
             </div>
-          </section>
-        </section>
-        <h1 className='divider'>Your daily report</h1>
-        <section className='notifications'>
-          <div className='notification-item'>
-            <img src='/images/arrow_down.svg' alt='drug' />
-            <p>Your new prescription bmp 35 mg decrease blood pressure by 10%.</p>
-          </div>
-          <section className='key-metrics'>
-            <div className='stat-item' 
-              onClick={this.handleClick("steps")}>
-              <h1 className='title'>Steps</h1>
-              <h1 className='number'>4,265</h1>
-              <h1 className='unit'>steps</h1>
-            </div>
-            <div className='stat-item' onClick={this.handleClick("heartRate")}>
-              <h1 className='title'>Heart Rate</h1>
-              <h1 className='number'>100</h1>
-              <h1 className='unit'>bpm</h1>
-            </div>
-            <div className='stat-item' onClick={this.handleClick("bloodPressure")}>
-              <h1 className='title'>Blood Pressure</h1>
-              <h1 className='number'>110</h1>
-              <h1 className='unit'>mmHg</h1>
+            <div className='pill-view-item'>
+              <img src='/images/pills/2.svg' alt='drug' />
+              <div className='pill-details'>
+                <h1>Terazosin</h1>
+                <h3>250 mg</h3>
+              </div>
             </div>
           </section>
         </section>
@@ -124,9 +109,31 @@ class Dashboard extends Component {
             <h1>{this.state.bpm}<span>bpm</span></h1>
           </section>
         </section>
-        <footer>
-          <p>PULSE</p><i className='material-icons'>copyright</i>
-        </footer>
+        <h1 className='divider'>Your daily report</h1>
+        <section className='notifications'>
+          <div className='notification-item'>
+            <img src='/images/arrow_down.svg' alt='drug' />
+            <p>Your new prescription Alfuzosin decreases heart rate by 25%.</p>
+          </div>
+          <section className='key-metrics'>
+            <div className='stat-item'
+              onClick={this.handleClick("steps")}>
+              <h1 className='title'>Steps</h1>
+              <h1 className='number'>1,065</h1>
+              <h1 className='unit'>steps</h1>
+            </div>
+            <div className='stat-item' onClick={this.handleClick("heartRate")}>
+              <h1 className='title'>Heart Rate</h1>
+              <h1 className='number'>63</h1>
+              <h1 className='unit'>bpm</h1>
+            </div>
+            <div className='stat-item' onClick={this.handleClick("bloodPressure")}>
+              <h1 className='title'>Blood Pressure</h1>
+              <h1 className='number'>128/77</h1>
+              <h1 className='unit'>mmHg</h1>
+            </div>
+          </section>
+        </section>
       </div>
     )
   }
