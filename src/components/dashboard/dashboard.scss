@@ -1,4 +1,43 @@
-.dashboard {
+@keyframes waves {
+  0% {
+    top: 50%;
+    width: 10px;
+    height: 10px;
+  }
+
+  30% {
+    top: 50%;
+  }
+
+  45% {
+    top: 100%;
+  }
+  
+  55% {
+    top: 0;
+  }
+
+  70% {
+    top: 50%;
+  }
+
+  100% {
+    top: 50%;
+    width: 10px;
+    height: 10px;
+  }
+}
+
+#dashboard {
+  transform: translateY(10px);
+  opacity: 0;
+  transition: transform 1s ease, opacity 1s ease;
+
+  &.visible {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
   header {
     padding: 50px 30px 25px;
     display: flex;
@@ -35,6 +74,9 @@
     .pill-view {
       overflow-x: scroll;
       display: flex;
+      &::-webkit-scrollbar {
+        display: none;
+      }
 
       .pill-view-item {
         flex-shrink: 0;
@@ -92,19 +134,87 @@
     margin-top: 30px;
     background-color: rgb(180, 31, 133);
     padding: 30px;
-    display: flex;
-    justify-content: space-between;
     font-weight: 700;
     color: #FFFFFF;
     h3 {
       font-size: 28px;
     }
     h1 {
-      margin-top: 40px;
+      margin-top: 20px;
       align-self: flex-end;
       font-size: 70px;
       span {
         font-size: 24px;
+      }
+    }
+
+    section {
+      display: flex;
+      justify-content: space-between;
+      .pulse {
+        display: flex;
+        position: relative;
+        margin: 25px 0;
+        div {
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          border-radius: 5px;
+          margin-left: 3px;  
+          animation: waves 1s ease-in-out infinite;
+          animation-direction: alternate;
+
+          &.pulse1 {
+            left: 0px;
+             animation-delay: .1s;
+             background-color: rgba(255, 255, 255, 0.1);
+          }
+          &.pulse2 {
+            left: 15px;
+            animation-delay: .2s;
+            background-color: rgba(255, 255, 255, 0.2);
+          }
+          &.pulse3 {
+            left: 30px;
+            animation-delay: .3s;
+            background-color: rgba(255, 255, 255, 0.3);
+          }
+          &.pulse4 {
+            left: 45px;
+            animation-delay: .4s;
+            background-color: rgba(255, 255, 255, 0.4);
+          }
+          &.pulse5 {
+            left: 60px;
+            animation-delay: .5s;
+            background-color: rgba(255, 255, 255, 0.5);
+          }
+          &.pulse6 {
+            left: 75px;
+            animation-delay: .6s;
+            background-color: rgba(255, 255, 255, 0.6);
+          }
+          &.pulse7 {
+            left: 90px;
+            animation-delay: .7s;
+            background-color: rgba(255, 255, 255, 0.7);
+          }
+          &.pulse8 {
+            left: 105px;
+            animation-delay: .8s;
+            background-color: rgba(255, 255, 255, 0.8);
+          }
+          &.pulse9 {
+            left: 120px;
+            animation-delay: .9s;
+            background-color: rgba(255, 255, 255, 0.9);
+          }
+          &.pulse10 {
+            left: 135px;
+            animation-delay: 1s;
+            background-color: rgba(255, 255, 255, 1);
+          }
+        }
       }
     }
   }

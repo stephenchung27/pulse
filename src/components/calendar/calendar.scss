@@ -1,0 +1,127 @@
+#calendar {
+  transform: translateY(10px);
+  opacity: 0;
+  transition: transform 1s ease,
+    opacity 1s ease;
+
+  &.visible {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+  &>header {
+    box-sizing: border-box;
+    padding: 20px 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    button {
+      padding: 0;
+
+      i {
+        font-size: 46px;
+        color: rgb(65, 150, 181);
+      }
+    }
+
+    h1 {
+      margin-right: 30px;
+      font-size: 30px;
+      font-weight: 700;
+    }
+  }
+
+  .date {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 0px 10px;
+    border-bottom: 5px solid rgb(214, 78, 78);
+    background-color: #FFFFFF;
+    margin-bottom: 5px;
+
+    div {
+      margin-right: 30px;
+      text-align: center;
+
+      h2 {
+        font-size: 18px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+    }
+  }
+
+  .period {
+    header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      height: 58px;
+
+      &.blue {
+        background-color: rgb(65, 150, 181);
+      }
+
+      &.purple {
+        background-color: rgb(52, 0, 110);
+      }
+
+      &.red {
+        background-color: #b41f85;
+      }
+
+      h1 {
+        margin-left: 25px;
+        font-size: 36px;
+        font-weight: 700;
+        color: #FFFFFF;
+      }
+    }
+
+    main {
+      padding: 5px 0;
+      display: flex;
+      flex-direction: column;
+
+      .period-item {
+        padding: 10px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h1 {
+          font-size: 24px;
+          font-weight: 700;
+          margin-bottom: 5px;
+        }
+
+        &:nth-child(2n + 1) {
+          background-color: rgb(244, 246, 246);
+        }
+      }
+    }
+  }
+
+  #modal-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    background-color: rgb(65, 150, 181);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+
+    &.visible {
+      opacity: 1;
+    }
+  }
+}
