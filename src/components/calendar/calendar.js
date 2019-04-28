@@ -12,6 +12,7 @@ class Calendar extends Component {
     this.state = {
       modalOpen: false,
       drugId: null,
+      topPosition: 50,
     }
 
     this.closeModal = this.closeModal.bind(this);
@@ -31,14 +32,19 @@ class Calendar extends Component {
     setTimeout(() => this.setState({ modalOpen: false }), 500);
   }
 
-  openModal(drugName) {
+  openModal(drugName, domElement) {
     this.setState({
       modalOpen: true,
-      drugName
+      drugName,
+      topPosition: domElement.current.offsetTop,
     }, () => {
-      setTimeout(() => document.getElementById('modal-overlay').classList.add('visible'));
-    });
-  }
+      setTimeout(() => {
+        console.log(domElement.current.offsetTop)
+        // document.getElementById('pill-info').style.cssText = `top': ${domElement.current.offsetTop}`
+        return document.getElementById('modal-overlay').classList.add('visible');
+      });
+    }
+    )}
 
   render() {
     if (!this.props.pills) return null;
@@ -52,7 +58,7 @@ class Calendar extends Component {
         {this.state.modalOpen &&
           <div id='modal-overlay'
             onClick={this.closeModal}>
-            <PillInfo closeModal={this.closeModal} pill={this.state.drugName} />
+            <PillInfo closeModal={this.closeModal} pill={this.state.drugName} topPos={this.state.topPosition}/>
           </div>
         }
         <header>
