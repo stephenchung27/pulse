@@ -23,9 +23,14 @@ class Report extends Component {
 
   render() {
     if (!Object.values(this.props.report).length) return null;
+    let heartRateClass = this.state.type === 'heartRate' ? 'active-fixed' : '';
 
     return (
       <section className="report">
+        <div className={`heart-rate ${heartRateClass}`}>
+          Since you started taking advil your heart rate has 
+          dropped 25%
+        </div>
         <header>
           <i className='material-icons'
           onClick={() => {
