@@ -79,42 +79,6 @@ class Calendar extends Component {
             <h1>9:00 AM</h1>
           </header>
           <main>
-            {/* <div className='period-item'
-              onClick={this.openModal(1)}>
-              <div>
-                <h1>Alfuzosin</h1>
-                <h3>150 mg</h3>
-              </div>
-              <img src='/images/pills/1.svg' alt='drug' />
-            </div>
-            <div className='period-item'>
-              <div>
-                <h1>Doxazosin</h1>
-                <h3>150 mg</h3>
-              </div>
-              <img src='/images/pills/2.svg' alt='drug' />
-            </div>
-            <div className='period-item'>
-              <div>
-                <h1>Silodosin</h1>
-                <h3>150 mg</h3>
-              </div>
-              <img src='/images/pills/3.svg' alt='drug' />
-            </div>
-            <div className='period-item'>
-              <div>
-                <h1>Tamsulosin</h1>
-                <h3>150 mg</h3>
-              </div>
-              <img src='/images/pills/4.svg' alt='drug' />
-            </div>
-            <div className='period-item'>
-              <div>
-                <h1>Terazosin</h1>
-                <h3>150 mg</h3>
-              </div>
-              <img src='/images/pills/2.svg' alt='drug' />
-            </div> */}
             {pills}
           </main>
         </section>
@@ -123,41 +87,7 @@ class Calendar extends Component {
             <h1>9:00 AM</h1>
           </header>
           <main>
-            <div className='period-item'>
-              <div>
-                <h1>Alfuzosin</h1>
-                <h3>150 mg</h3>
-              </div>
-              <img src='/images/pills/1.svg' alt='drug' />
-            </div>
-            <div className='period-item'>
-              <div>
-                <h1>Doxazosin</h1>
-                <h3>150 mg</h3>
-              </div>
-              <img src='/images/pills/2.svg' alt='drug' />
-            </div>
-            <div className='period-item'>
-              <div>
-                <h1>Silodosin</h1>
-                <h3>150 mg</h3>
-              </div>
-              <img src='/images/pills/3.svg' alt='drug' />
-            </div>
-            <div className='period-item'>
-              <div>
-                <h1>Tamsulosin</h1>
-                <h3>150 mg</h3>
-              </div>
-              <img src='/images/pills/4.svg' alt='drug' />
-            </div>
-            <div className='period-item'>
-              <div>
-                <h1>Terazosin</h1>
-                <h3>150 mg</h3>
-              </div>
-              <img src='/images/pills/2.svg' alt='drug' />
-            </div>
+            {pills}
           </main>
         </section>
         <section className='period'>
@@ -165,41 +95,7 @@ class Calendar extends Component {
             <h1>9:00 AM</h1>
           </header>
           <main>
-            <div className='period-item'>
-              <div>
-                <h1>Alfuzosin</h1>
-                <h3>150 mg</h3>
-              </div>
-              <img src='/images/pills/1.svg' alt='drug' />
-            </div>
-            <div className='period-item'>
-              <div>
-                <h1>Doxazosin</h1>
-                <h3>150 mg</h3>
-              </div>
-              <img src='/images/pills/2.svg' alt='drug' />
-            </div>
-            <div className='period-item'>
-              <div>
-                <h1>Silodosin</h1>
-                <h3>150 mg</h3>
-              </div>
-              <img src='/images/pills/3.svg' alt='drug' />
-            </div>
-            <div className='period-item'>
-              <div>
-                <h1>Tamsulosin</h1>
-                <h3>150 mg</h3>
-              </div>
-              <img src='/images/pills/4.svg' alt='drug' />
-            </div>
-            <div className='period-item'>
-              <div>
-                <h1>Terazosin</h1>
-                <h3>150 mg</h3>
-              </div>
-              <img src='/images/pills/2.svg' alt='drug' />
-            </div>
+            {pills}
           </main>
         </section>
       </div>
