@@ -112,8 +112,8 @@
 
   .notifications {
     width: 100%;
-    background-color: rgb(244, 246, 246);
-    padding: 25px 20px;
+    background-color: rgb(52, 0, 110);
+    padding: 25px 20px 20px;
     box-sizing: border-box;
 
     .notification-item {
@@ -124,7 +124,7 @@
         flex-shrink: 1;
         font-size: 22px;
         font-weight: 700;
-        color: rgb(69, 81, 84);
+        color: #FFFFFF;
       }
     }
 
@@ -222,28 +222,29 @@
   .key-metrics {
     display: flex;
     flex-direction: column;
+    margin-top: 25px;
     .stat-item {
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
-      padding: 10px 35px;
+      padding: 10px 10px;
+      border-radius: 5px;
       font-size: 22px;
       font-weight: 700;
-      color: rgb(69, 81, 84);
+      color: #FFF;
       .title {
         flex-grow: 1;
       }
       .number {
         font-size: 36px;
-        color: rgb(52, 0, 110);
       }
       .unit {
         margin-left: 8px;
-        width: 60px;
+        width: 69px;
       }
 
       &:nth-child(2n + 1) {
-        background-color: rgb(244, 246, 246);
+        background-color: rgba(244, 246, 246, 0.3);
       }
     }
   }
