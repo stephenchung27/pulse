@@ -24,15 +24,10 @@ class Report extends Component {
     if (!Object.values(this.props.report).length) return null;
 
     return (
-    <>
-      <h1 className="data-title">
-        {this.state.type}
-      </h1>
-      <h2>
-        weekly report
+    <section className="report">
+      <h2 className="report-title">
+        Report
       </h2>
-
-      < Chart data={this.props.report[this.state.type]} type={this.state.type} />
       <div className="buttons">
         <div onClick={this.handleChange("bloodPressure")} className="data-type">
             BloodPressure
@@ -43,11 +38,9 @@ class Report extends Component {
         <div onClick={this.handleChange("steps")} className="data-type">
             Steps
         </div>
-        <div onClick={this.handleChange("glucose")} className="data-type">
-            Glucose
-        </div>
       </div>
-    </>
+      < Chart data={this.props.report[this.state.type]} type={this.state.type} />
+    </section>
     )
   }
 }

@@ -1,9 +1,25 @@
 .data-type {
   display: inline-block;
   padding: 10px;
-  border: 1px solid red;
+  background-color: #B0B0B0;
 }
 
 .data-title {
   font-size: 30px;
+}
+
+.buttons {
+  display: flex;
+  margin-top: 15px;
+}
+
+.report {
+  background-color: #34006E;
+}
+
+.report-title {
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding-top: 30px;
 }
