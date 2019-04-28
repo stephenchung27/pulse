@@ -1,0 +1,37 @@
+{
+  "Alfuzosin": {
+    "drug": "Alfuzosin",
+    "dose": "150 mg",
+    "picture_path": "/images/pills/1.svg",
+    "type": "Nonsteroidal anti-inflammatory drug",
+    "description": "Alfuzosin comes as an extended-release (long-acting) tablet to take by mouth. It is usually taken once a day, immediately after a meal. Do not take alfuzosin on an empty stomach."
+  },
+  "Doxazosin": {
+    "drug": "Doxazosin",
+    "dose": "200 mg",
+    "picture_path": "/images/pills/2.svg",
+    "type": "Nonsteroidal anti-inflammatory drug",
+    "description": "Doxazosin can treat urinary problems caused by an enlarged prostate (benign prostatic hyperplasia). It can also treat high blood pressure when used alone or in combination with other medications."
+  },
+  "Silodosin": {
+    "drug": "Silodosin",
+    "dose": "250 mg",
+    "picture_path": "/images/pills/3.svg",
+    "type": "Nonsteroidal anti-inflammatory drug",
+    "description": "Silodosin can treat problems caused by an enlarged prostate (benign prostatic hyperplasia or BPH)."
+  },
+  "Tamsulosin": {
+    "drug": "Tamsulosin",
+    "dose": "150 mg",
+    "picture_path": "/images/pills/4.svg",
+    "type": "Nonsteroidal anti-inflammatory drug",
+    "description": "Tamsulosin can treat an enlarged prostate (benign prostatic hyperplasia)."
+  },
+  "Terazosin": {
+    "drug": "Terazosin",
+    "dose": "250 mg",
+    "picture_path": "/images/pills/2.svg",
+    "type": "Anti-diabetic medication",
+    "description": "Terazosin can treat high blood pressure and enlarged prostate (benign prostatic hyperplasia)."
+  }
+}
