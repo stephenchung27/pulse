@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { receiveCurrentReport } from '../../actions/report_actions';
+import Footer from '../footer';
 import './dashboard.scss';
 
 class Dashboard extends Component {
@@ -134,6 +135,7 @@ class Dashboard extends Component {
             </div>
           </section>
         </section>
+        <Footer />
       </div>
     )
   }

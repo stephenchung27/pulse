@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { fetchPills } from '../../actions/pill_actions';
 import PillInfo from './pill_info';
 import PillIndexItem from './pill_index_item'
+import Footer from '../footer';
 import './calendar.scss';
 
 class Calendar extends Component {
@@ -104,6 +105,7 @@ class Calendar extends Component {
             {pills}
           </main>
         </section>
+        <Footer />
       </div>
     )
   }

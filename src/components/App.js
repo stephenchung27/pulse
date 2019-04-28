@@ -5,7 +5,6 @@ import Dashboard from './dashboard/dashboard';
 import Today from './today/today';
 import Report from './report/report';
 import Calendar from './calendar/calendar';
-import Footer from './footer';
 
 function App() {
   return (
@@ -17,7 +16,6 @@ function App() {
         <Route exact path='/report' component={Report} />
         <Route exact path='/calendar' component={Calendar} />
       </Switch>
-      <Footer />
     </>
   );
 }

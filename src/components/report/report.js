@@ -25,7 +25,7 @@ class Report extends Component {
   }
 
   render() {
-    if (!Object.values(this.props.report).length) return null;
+    // if (!Object.values(this.props.report).length) return null;
     let heartRateClass = this.state.type === 'heartRate' ? 'active-fixed' : '';
 
     return (
