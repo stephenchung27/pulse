@@ -5,8 +5,9 @@ import './pill_info.scss';
 class PillInfo extends Component {
   render() {
     return (
-      <div className='pill-info'
-        onClick={(e) => e.stopPropagation()}>
+      <div id='pill-info'
+        onClick={(e) => e.stopPropagation()}
+        style={{'top': `${this.props.topPos-150}px`}}>
         <img src={this.props.pills[this.props.pill].picture_path} alt='drug'/>
         <h1>{this.props.pills[this.props.pill].drug}</h1>
         <h3>{this.props.pills[this.props.pill].dose}</h3>

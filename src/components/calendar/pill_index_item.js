@@ -5,17 +5,17 @@ import './calendar.scss';
 class PillIndexItem extends Component {
   constructor(props) {
     super(props);
-
+    this.ref = React.createRef();
     this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick() {
-    this.props.openModal(this.props.pill);
+    this.props.openModal(this.props.pill, this.ref);
   }
 
   render() {
     return (
-      <div className='period-item'
+      <div className='period-item' ref={this.ref}
       onClick={this.handleClick}>
         <div>
           <h1>{this.props.pills[this.props.pill].drug}</h1>
