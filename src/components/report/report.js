@@ -29,11 +29,11 @@ class Report extends Component {
         Report
       </h2>
       <div className="buttons">
-        <div onClick={this.handleChange("bloodPressure")} className="data-type">
-            BloodPressure
+        <div onClick={this.handleChange("bloodPressure")} className="data-type active">
+            Blood Pressure
         </div>
         <div onClick={this.handleChange("heartRate")} className="data-type">
-            HeartRate
+            Heart Rate
         </div>
         <div onClick={this.handleChange("steps")} className="data-type">
             Steps

@@ -33,18 +33,16 @@ class Chart extends Component {
     }
 
     let ticks = [];
-    for (let i = smallest; i < biggest; i += Math.floor((biggest-smallest) / 30)) {
+    for (let i = smallest; i < biggest; i += Math.floor((biggest-smallest) / 3)) {
       ticks.push(i);
-    }
-
-    const dateTicks = ["4/22","4/23","4/24","4/25","4/26","4/27","4/28","4/29"]
+    } 
   
     return (
      <>
        <LineChart width={width} height={height} data={this.props.data} 
         margin={{ top: 0, right: 0, bottom: 0, left: 0 }}>
-        <XAxis ticks={dateTicks} />
-        <CartesianGrid stroke="#eee" />
+        <XAxis />
+        <CartesianGrid stroke="#eee" vertical={false}/>
         <YAxis tickSize={4} domain={[smallest, biggest]} ticks={ticks} axisLine={false}/>
         <Tooltip contentStyle={{ backgroundColor: 'purple', border: '0', borderRadius: "5px" }}/>
         {line1}
