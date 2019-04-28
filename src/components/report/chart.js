@@ -50,7 +50,7 @@ class Chart extends Component {
             tickLine={false}
             tick={{ fontSize: 15, fontWeight: 700, fill: '#FFF' }}
             ticks={ticks} axisLine={false} tickMargin={10} />
-          <Tooltip contentStyle={{ backgroundColor: 'purple', border: '0', borderRadius: "5px" }} />
+          <Tooltip contentStyle={{ backgroundColor: '#B41F85', border: '0', borderRadius: "5px" }} />
           {line1}
           {line2}
         </LineChart>
