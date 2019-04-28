@@ -4,6 +4,7 @@ import Splash from './splash/splash';
 import Dashboard from './dashboard/dashboard';
 import Today from './today/today';
 import Report from './report/report';
+import Calendar from './calendar/calendar';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route exact path='/dashboard' component={Dashboard} />
         <Route exact path='/today' component={Today} />
         <Route exact path='/report' component={Report} />
+        <Route exact path='/calendar' component={Calendar} />
       </Switch>
   );
 }
