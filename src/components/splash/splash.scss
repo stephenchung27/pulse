@@ -142,10 +142,29 @@
       position: absolute;
       top: 50%;
       left: 50%;
-      padding: 20px;
+      width: calc(100% - 20px);
+      box-sizing: border-box;
+      padding: 10px;
       border-radius: 7px;
       transform: translate(-50%, -50%);
       background-color: rgb(65, 150, 181);
+      color: #fff;
+      p {
+        font-size: 16px;
+        text-align: center;
+      }
+
+      a {
+        display: block;
+        background-color: #FFF;
+        text-align: center;
+        margin-top: 10px;
+        width: 100%;
+        font-size: 16px;
+        padding: 10px 0;
+        border-radius: 7px;
+        color: rgb(65, 150, 181);
+      }
     }
   }
 }

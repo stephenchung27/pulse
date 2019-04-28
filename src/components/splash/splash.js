@@ -25,8 +25,8 @@ class Splash extends Component {
         {this.state.modalOpen &&
           <div id='modal-overlay'>
             <div className='modal'>
-              <p>By click "I agree" you are agreeing </p>
-              <button>I Agree</button>
+              <p>By clicking "I agree" you are agreeing </p>
+              <Link to='/dashboard'>I Agree</Link>
             </div>
           </div>}
         <header>

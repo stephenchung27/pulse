@@ -32,19 +32,19 @@ class Calendar extends Component {
   }
 
   openModal(drugName) {
-      this.setState({
-        modalOpen: true,
-        drugName
-      }, () => {
-        setTimeout(() => document.getElementById('modal-overlay').classList.add('visible'));  
-      });
+    this.setState({
+      modalOpen: true,
+      drugName
+    }, () => {
+      setTimeout(() => document.getElementById('modal-overlay').classList.add('visible'));
+    });
   }
 
   render() {
     if (!this.props.pills) return null;
-    
+
     const pills = Object.keys(this.props.pills).map((pill, i) => {
-      return < PillIndexItem pill={pill} openModal={this.openModal} key={i}/>
+      return <PillIndexItem pill={pill} openModal={this.openModal} key={i} />
     })
 
     return (
