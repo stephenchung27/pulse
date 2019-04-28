@@ -33,7 +33,7 @@ class Report extends Component {
           }}>
           keyboard_arrow_left
           </i>
-          <h2 className="report-title">Daily Report</h2>
+          <h2 className="report-title">Weekly Report</h2>
         </header>
         <div className="buttons">
           <div onClick={this.handleChange("bloodPressure")} 

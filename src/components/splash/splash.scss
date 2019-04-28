@@ -123,5 +123,29 @@
     }
   }
 
+  #modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.8);
 
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    
+    &.visible {
+      opacity: 1;
+    }
+
+    .modal {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      padding: 20px;
+      border-radius: 7px;
+      transform: translate(-50%, -50%);
+      background-color: rgb(65, 150, 181);
+    }
+  }
 }

@@ -114,6 +114,9 @@ class Dashboard extends Component {
             <h1>{this.state.bpm}<span>bpm</span></h1>
           </section>
         </section>
+        <footer>
+          <p>PULSE</p><i className='material-icons'>copyright</i>
+        </footer>
       </div>
     )
   }
