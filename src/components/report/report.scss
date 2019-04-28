@@ -40,6 +40,7 @@
 
 .report {
   background-color: #34006E;
+  position: relative;
 }
 
 .report-title {
@@ -54,4 +55,22 @@
 .active {
   background-color: #B41F85;
   color: white;
+}
+
+.heart-rate {
+  display: inline-block;
+  width: 150px;
+  border-radius: 5px;
+  padding: 10px;
+  top: 300px;
+  left: 180px;
+  visibility: hidden;
+  z-index: 2;
+  position: absolute;
+  background-color: #B41F85;
+  color: white;
+}
+
+.active-fixed {
+  visibility: visible;
 }
