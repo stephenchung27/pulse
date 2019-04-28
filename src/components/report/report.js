@@ -8,7 +8,7 @@ import './report.scss'
 class Report extends Component {
   constructor(props) {
     super(props);
-    this.state = { type: "bloodPressure" };
+    this.state = { type: this.props.currentReport };
 
     this.handleChange = this.handleChange.bind(this);
   }
@@ -58,6 +58,7 @@ class Report extends Component {
 const mapStateToProps = (state) => {
   return {
     report: state.entities.report,
+    currentReport: state.entities.currentReport,
   }
 }
 

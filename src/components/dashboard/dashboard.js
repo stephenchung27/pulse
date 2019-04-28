@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { receiveCurrentReport } from '../../actions/report_actions';
 import './dashboard.scss';
 
 class Dashboard extends Component {
@@ -23,6 +25,13 @@ class Dashboard extends Component {
 
   componentWillUnmount() {
     clearInterval(this.interval);
+  }
+
+  handleClick(report) {
+    return () => {
+      this.props.receiveCurrentReport(report);
+      this.props.history.push("/report");
+    }
   }
 
   render() {
@@ -79,17 +88,18 @@ class Dashboard extends Component {
             <p>Your new prescription bmp 35 mg decrease blood pressure by 10%.</p>
           </div>
           <section className='key-metrics'>
-            <div className='stat-item'>
+            <div className='stat-item' 
+              onClick={this.handleClick("steps")}>
               <h1 className='title'>Steps</h1>
               <h1 className='number'>4,265</h1>
               <h1 className='unit'>steps</h1>
             </div>
-            <div className='stat-item'>
+            <div className='stat-item' onClick={this.handleClick("heartRate")}>
               <h1 className='title'>Heart Rate</h1>
               <h1 className='number'>100</h1>
               <h1 className='unit'>bpm</h1>
             </div>
-            <div className='stat-item'>
+            <div className='stat-item' onClick={this.handleClick("bloodPressure")}>
               <h1 className='title'>Blood Pressure</h1>
               <h1 className='number'>110</h1>
               <h1 className='unit'>mmHg</h1>
@@ -119,4 +129,10 @@ class Dashboard extends Component {
   }
 }
 
-export default withRouter(Dashboard);
+const mdp = (dispatch) => {
+  return {
+    receiveCurrentReport: (report) => dispatch(receiveCurrentReport(report)),
+  }
+}
+
+export default withRouter(connect(null, mdp)(Dashboard));
