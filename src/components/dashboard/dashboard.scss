@@ -74,6 +74,8 @@
     .pill-view {
       overflow-x: scroll;
       display: flex;
+      //fix vertical scroll
+      line-height: 20px;
       &::-webkit-scrollbar {
         display: none;
       }

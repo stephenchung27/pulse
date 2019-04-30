@@ -25,7 +25,9 @@ class Splash extends Component {
         {this.state.modalOpen &&
           <div id='modal-overlay'>
             <div className='modal'>
-              <p>By clicking "I agree" you are agreeing </p>
+              <p>By clicking "I Agree" you are agreeing</p>
+              <p>to the terms and conditions set forth </p>
+              <p>in the Pulse User Agreement</p>
               <Link to='/dashboard'>I Agree</Link>
             </div>
           </div>}

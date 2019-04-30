@@ -31,7 +31,7 @@ class Report extends Component {
     return (
       <section id="report">
         <div className={`heart-rate ${heartRateClass}`}>
-          Since you started taking Lopressor your heart rate has 
+          Since you started taking Lopressor your resting heart rate has 
           dropped 23%
         </div>
         <header>
